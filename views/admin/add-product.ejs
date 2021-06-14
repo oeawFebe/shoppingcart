@@ -1,0 +1,26 @@
+<%- include('../includes/head.ejs') %>
+<body>
+<%- include('../includes/navigation.ejs') %>
+    <form class='product-form' method="POST" action='/admin/add-product'>
+        <div class='form-control'>
+            <label for='title'>Title</label>
+            <input type='text' id='title' name='title'/>
+        </div>
+        <div class='form-control'>
+            <label for='imageUrl'>Image</label>
+            <input type='text' id='imageUrl' name='imageUrl'/>
+            <div class='form-control'>
+                <label for='price'>Price</label>
+                <input type='number' id='price' name='price' step='0.01'/>
+        <div class='form-control'>
+            <label for='description'>Description</label>
+            <textarea id='description' name='description'></textarea>
+        </div>
+        <button type='submit'>Add Product</button>
+    </form>
+
+
+
+    <script src='C:\\Users\\Owner\\Desktop\\bookreview\\app.js'></script>
+</body>
+</html>

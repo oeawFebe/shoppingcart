@@ -1,0 +1,16 @@
+<%- include('../includes/head.ejs') %>
+<body>
+<%- include('../includes/navigation.ejs') %>
+    <% if(hasProducts) { %>
+        <% for (let p of prods) { %>
+            <p><%= p.title %></p>
+            <img src='todo.jpg' alt='todo' />
+            <p>$19.99</p>
+            <button>add to cart</button>
+        <% } %>
+    <% } else { %>
+        <p>no products yet</p>
+    <% } %>
+    <script src='./app.js'></script>
+</body>
+</html>
